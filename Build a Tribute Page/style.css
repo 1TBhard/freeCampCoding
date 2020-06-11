@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	list-style: none;
+	line-height: 25px;
+	color: #434343;
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	background-color: #ce9f86;
+}
+
+#main {
+	width: 60%;
+	min-width: 800px;
+	margin: auto;
+	padding: 20px 50px;
+	background-color: #fff;
+}
+
+#title {
+	margin-top: 20px;
+	font-family: sans-serif;
+	text-align: center;
+	color: black;
+}
+
+#main > p {
+	padding: 20px;
+	display: block;
+	text-align: center;
+	font-size: 15px;
+}
+
+#img-div {
+	width: 100%;
+	margin: 0 auto 30px auto;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+#img-caption {
+	color: #737373;
+}
+
+.tribute-info__box {
+	font-size: 15px;
+}
+
+.tribute-info__box > h3 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.tribute-info__box::before {
+	content: "";
+	display: block;
+	height: 50px;
+}
+
+.time-line {
+	margin: auto;
+	width: 500px;
+
+	text-indent: -50px;
+	font-family: monospace, sans-serif;
+}
+
+.detail {
+	margin: auto;
+}
+
+.detail li::after {
+	content: "";
+	height: 50px;
+	display: block;
+}
+
+.detail li {
+	text-align: justify;
+}
+
+.footer {
+	text-align: center;
+}
+
+.footer a {
+	color: #3b5acc;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<header id="header">
+			<a class="header__logo" href="#">
+				<img id="header-img" src="https://svgsilh.com/svg/309508.svg" alt="" />
+				<h3>A. Coffee</h3>
+			</a>
+
+			<nav id="nav-bar">
+				<ul class="nav-bar__pool">
+					<li><a class="nav-link" href="#intro-video">Intro</a></li>
+					<li><a class="nav-link" href="#select-coffee">Goods</a></li>
+					<li><a class="nav-link" href="#connect">Connect</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="first-box">
+				<h1 class="title">Drink Coffee<br />Do Good</h1>
+				<img
+					class="background-img"
+					src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1256&q=80"
+				/>
+			</section>
+
+			<section class="home-box" id="intro-video">
+				<iframe
+					id="video"
+					class="middle"
+					height="315"
+					src="https://www.youtube.com/embed/pVh6yN36M0A"
+					frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</section>
+
+			<section class="home-box" id="select-coffee">
+				<div class="card">
+					<div class="card__img">
+						<img
+							src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+						/>
+					</div>
+
+					<h3 class="card__title">Espresso</h3>
+					<p class="card__description">
+						Espresso is generally denser than coffee brewed by other methods,
+						having a higher concentration of suspended and dissolved solids.
+					</p>
+					<h3 class="card__money">$4</h3>
+					<button class="card__button">Buy it</button>
+				</div>
+
+				<div class="card">
+					<img
+						class="card__img"
+						src="https://images.unsplash.com/photo-1556484245-2c765becb8eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+					/>
+					<h3 class="card__title">Cafe Latte</h3>
+					<p class="card__description">
+						Cafe Latte is a coffee drink made with espresso and steamed milk.
+					</p>
+					<h3 class="card__money">$5</h3>
+					<button class="card__button">Buy it</button>
+				</div>
+				<div class="card">
+					<img
+						class="card__img"
+						src="https://images.unsplash.com/photo-1579365248976-81e3597e6896?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+					/>
+					<h3 class="card__title">Cold brew</h3>
+					<p class="card__description">
+						Cold brewing, also called cold water extraction or cold pressing, is
+						the process of steeping coffee grounds in water at cool temperatures
+						for an extended period.
+					</p>
+					<h3 class="card__money">$7</h3>
+					<button class="card__button">Buy it</button>
+				</div>
+				<img
+					class="background-img"
+					src="https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
+				/>
+			</section>
+
+			<section class="home-box" id="connect">
+				<form
+					id="form"
+					class="middle send-email"
+					action="https://www.freecodecamp.com/email-submit"
+				>
+					<label class="send-email__label"
+						>Connect us:
+						<input
+							id="email"
+							class="send-email__input"
+							type="email"
+							name="email"
+							placeholder="Enter Your Email"
+							required
+						/>
+					</label>
+					<input id="submit" class="send-email__button" type="submit" />
+				</form>
+			</section>
+		</main>
+	</body>
+</html>
