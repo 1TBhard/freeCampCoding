@@ -6,20 +6,43 @@
 	margin: 0;
 	box-sizing: inherit;
 	font-family: "Roboto", sans-serif;
+	text-decoration: none;
+	color: black;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 1.7em;
 }
 
 #navbar {
+	top: 0;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	position: fixed;
 	display: flex;
 	justify-content: space-evenly;
-	padding: 10px 20px;
 	font-size: 25px;
 
 	background-color: #f67280;
+	z-index: 2;
 }
 
 #navbar * {
 	color: white;
 	text-decoration: none;
+}
+
+main {
+	margin-top: 40px;
 }
 
 #welcome-section {
@@ -28,7 +51,6 @@
 }
 
 #welcome-section > .middle-wrapper {
-	font-size: 2rem;
 	line-height: 2.3;
 }
 
@@ -41,6 +63,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 #projects {
@@ -49,7 +72,30 @@
 	text-align: center;
 }
 
-.project-wrapper {
+.projects-wrapper {
+	margin: 50px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 30px;
+}
+
+.project-tile {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #f8b195;
+}
+
+.project-tile__img,
+.project-tile__img img {
+	width: 100%;
+}
+
+.project-tile__title {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	border: none;
 }
 
 button {
@@ -60,10 +106,58 @@ button {
 	border-radius: 3px;
 }
 
+button:hover {
+	cursor: pointer;
+}
+
 button:focus {
 	outline: none;
 }
 
-footer {
+.projects__more {
+	width: 100%;
+	height: 40px;
+	letter-spacing: 1.2px;
+	font-size: 1.7rem;
+}
+
+#profile-link {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
 	background-color: #355c7d;
+	text-align: center;
+}
+
+#profile-link > h2 {
+	margin-bottom: 65px;
+}
+
+.profile-link__contect {
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+.profile-link__item {
+	display: block;
+	height: 100%;
+	font-size: 2rem;
+}
+
+.profile-link__item {
+	text-shadow: 1px 1px 2px #15252e;
+	transition: transform 0.3s ease-out;
+}
+
+.profile-link__item:hover {
+	transform: translate(0, 30%);
+}
+
+footer {
+	padding: 30px 50px;
+	background-color: #666a85;
+	text-align: center;
 }

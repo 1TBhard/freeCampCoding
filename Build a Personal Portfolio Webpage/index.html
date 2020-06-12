@@ -3,6 +3,10 @@
 	<head>
 		<title>My Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+		/>
 	</head>
 
 	<body>
@@ -21,28 +25,84 @@
 			</section>
 
 			<section id="projects">
-				<h3>Here is my projects</h3>
+				<h2>Here is my projects</h2>
 				<div class="projects-wrapper">
 					<section class="project-tile">
-						<div class="project-tile__img"></div>
-						<div class="project-tile__title"></div>
+						<a href="https://codepen.io/1tbhard/pen/WNrbeGa" target="_blank">
+							<div class="project-tile__img">
+								<img
+									src="https://raw.githubusercontent.com/1TBhard/freeCampCoding/master/Build a Personal Portfolio Webpage/pic/tribute.PNG"
+								/>
+							</div>
+							<h3 class="project-tile__title">Tribute Page</h3>
+						</a>
 					</section>
 
 					<section class="project-tile">
-						<div class="project-tile__img"></div>
-						<div class="project-tile__title"></div>
+						<a href="https://codepen.io/1tbhard/pen/LYGEEgE" target="_blank">
+							<div class="project-tile__img">
+								<img
+									src="https://raw.githubusercontent.com/1TBhard/freeCampCoding/master/Build a Personal Portfolio Webpage/pic/survey.PNG"
+								/>
+							</div>
+							<h3 class="project-tile__title">Survey Page</h3>
+						</a>
+					</section>
+
+					<section class="project-tile">
+						<a href="https://codepen.io/1tbhard/pen/OJMyExm" target="_blank">
+							<div class="project-tile__img">
+								<img
+									src="https://raw.githubusercontent.com/1TBhard/freeCampCoding/master/Build a Personal Portfolio Webpage/pic/techinal doc.PNG"
+								/>
+							</div>
+							<h3 class="project-tile__title">Techinal Doc Page</h3>
+						</a>
+					</section>
+
+					<section class="project-tile">
+						<a href="https://codepen.io/1tbhard/pen/wvMMLYE" target="_blank">
+							<div class="project-tile__img">
+								<img
+									src="https://raw.githubusercontent.com/1TBhard/freeCampCoding/master/Build a Personal Portfolio Webpage/pic/coffee.PNG"
+								/>
+							</div>
+							<h3 class="project-tile__title">Product Landing Page</h3>
+						</a>
 					</section>
 				</div>
 
-				<button class="projects__more">See More</button>
+				<button
+					onclick="location.href='https://codepen.io/1tbhard'"
+					class="projects__more"
+					target="_blank"
+				>
+					See More
+				</button>
 			</section>
 
 			<section id="profile-link">
-				<div class="profile-link__item github"></div>
-				<div class="profile-link__item email"></div>
-				<div class="profile-link__item phone"></div>
+				<h2>Connect Me</h2>
+				<div class="profile-link__contect">
+					<a
+						href="https://github.com/1TBhard"
+						class="profile-link__item github"
+					>
+						<i class="fab fa-github"></i>
+						github
+					</a>
+					<a href="mailto:was1383@naver.com" class="profile-link__item email">
+						<i class="fas fa-envelope"></i>
+						email
+					</a>
+					<a href="#" class="profile-link__item phone">
+						<i class="fas fa-phone-square"></i>
+						phone
+					</a>
+				</div>
 			</section>
 		</main>
+
 		<footer>
 			<p>© Created for <strong>1tbhard</strong></p>
 		</footer>
