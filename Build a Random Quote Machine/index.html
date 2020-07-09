@@ -12,24 +12,23 @@
 	<body>
 		<div class="center-wrapper">
 			<main id="quote-box">
-				<div id="text">
-					<i class="fa fa-quote-left"></i>We must believe that we are gifted for
-					something, and that this thing, at whatever cost, must be attained.
+				<div id="text" class="changeable-color">
+					<i class="fa fa-quote-left"></i>
 				</div>
 
-				<div id="author">- Marie Curie</div>
+				<div id="author" class="changeable-color">- Marie Curie</div>
 
-				<div class="social-link">
-					<a id="tweet-quote" href="#" target="_blank">
+				<div class="btns-wrapper">
+					<a id="tweet-quote" class="changeable-color" href="#" target="_blank">
 						<i class="fab fa-twitter-square"></i>
 					</a>
-					<a id="facebook-quote" href="#" target="_blank">
-						<i class="fab fa-facebook-square"></i>
-					</a>
+
+					<a id="new-quote" class="changeable-color" onclick="changeQuote()"
+						>new quote</a
+					>
 				</div>
-				<a id="new-quote" href>new quote</a>
 			</main>
-			<!-- <div class="creator">by <a href="#">1TBhard</a></div> -->
+			<div class="creator">by <a href="#">1TBhard</a></div>
 		</div>
 
 		<script src="control.js"></script>

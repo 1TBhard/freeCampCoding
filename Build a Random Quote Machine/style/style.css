@@ -5,6 +5,10 @@
   text-decoration: none;
   font-family: sans-serif; }
 
+body {
+  height: 100vh;
+  width: 100vw; }
+
 .center-wrapper {
   position: absolute;
   left: 50%;
@@ -12,8 +16,8 @@
   transform: translate(-50%, -50%); }
 
 #quote-box {
-  color: #fff;
-  background-color: #000;
+  color: #000;
+  background-color: #fff;
   padding: 40px 25px; }
   #quote-box #text :first-child {
     margin-right: 10px; }
@@ -27,25 +31,37 @@
     font-size: 21px;
     font-weight: 100;
     text-align: right; }
-  #quote-box .social-link {
-    float: left; }
-    #quote-box .social-link a {
+  #quote-box .btns-wrapper {
+    height: 50px; }
+    #quote-box .btns-wrapper a {
       margin-right: 10px; }
-    #quote-box .social-link:last-child {
-      margin-right: 0px;
-      line-height: 0; }
-  #quote-box #new-quote {
-    float: right;
-    font-size: 25px;
-    font-family: "Roboto Mono", monospace; }
+    #quote-box .btns-wrapper:last-child {
+      margin-right: 0px; }
+    #quote-box .btns-wrapper #tweet-quote,
+    #quote-box .btns-wrapper #facebook-quote {
+      float: left; }
+    #quote-box .btns-wrapper #new-quote {
+      padding: 0 10px;
+      border-radius: 5px;
+      background-color: #000;
+      color: white;
+      float: right;
+      font-size: 25px;
+      line-height: 50px;
+      font-family: "Roboto Mono", monospace; }
 
 #quote-box a * {
   width: 50px;
   height: 50px;
-  color: #fff; }
+  color: #000; }
 
 .creator {
-  font-size: 15px; }
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: center; }
   .creator a {
     color: rebeccapurple;
     font-weight: 700; }
+
+.changeable-color {
+  transition: all 0.2s ease-in-out; }

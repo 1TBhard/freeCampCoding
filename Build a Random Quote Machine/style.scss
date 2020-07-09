@@ -7,6 +7,11 @@
 	font-family: sans-serif;
 }
 
+body {
+	height: 100vh;
+	width: 100vw;
+}
+
 $btn-size: 50px;
 $font-size: 35px;
 
@@ -18,8 +23,8 @@ $font-size: 35px;
 }
 
 #quote-box {
-	color: #fff;
-	background-color: #000;
+	color: #000;
+	background-color: #fff;
 	padding: 40px 25px;
 
 	#text :first-child {
@@ -40,35 +45,51 @@ $font-size: 35px;
 		text-align: right;
 	}
 
-	.social-link {
-		float: left;
+	.btns-wrapper {
+		height: $btn-size;
+
 		a {
 			margin-right: 10px;
 		}
 
 		&:last-child {
 			margin-right: 0px;
-			line-height: 0;
 		}
-	}
 
-	#new-quote {
-		float: right;
-		font-size: 25px;
-		font-family: "Roboto Mono", monospace;
+		#tweet-quote,
+		#facebook-quote {
+			float: left;
+		}
+
+		#new-quote {
+			padding: 0 10px;
+			border-radius: 5px;
+			background-color: #000;
+			color: white;
+			float: right;
+			font-size: 25px;
+			line-height: $btn-size;
+			font-family: "Roboto Mono", monospace;
+		}
 	}
 }
 
 #quote-box a * {
 	width: $btn-size;
 	height: $btn-size;
-	color: #fff;
+	color: #000;
 }
 
 .creator {
+	margin-top: 10px;
 	font-size: 15px;
+	text-align: center;
 	a {
 		color: rebeccapurple;
 		font-weight: 700;
 	}
+}
+
+.changeable-color {
+	transition: all 0.2s ease-in-out;
 }
