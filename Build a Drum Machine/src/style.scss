@@ -1,0 +1,82 @@
+$keyBtnSize: 80px;
+$keyBtnColor: orange;
+$keyBtnGap: 20px;
+
+@mixin gotoCenter() {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #454545;
+}
+
+#drum-machine {
+	@include gotoCenter;
+}
+
+#display {
+	background-color: #658c65;
+	display: block;
+
+	margin: $keyBtnGap/2 0 $keyBtnGap 0;
+	padding: 10px 0;
+	border-radius: 5px;
+
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+#drum-pads {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: $keyBtnGap;
+}
+
+.drum-pad {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 1px 1px 10px lighten(#454545, 30%);
+
+	width: $keyBtnSize;
+	height: $keyBtnSize;
+
+	background-color: $keyBtnColor;
+	color: #fff;
+
+	border-radius: 5px;
+
+	font-size: $keyBtnSize * 0.4;
+	font-weight: 700;
+}
+
+.playing {
+	transform: translateY(10px);
+	background-color: darken($keyBtnColor, 10%);
+}
+
+.title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#volumn {
+	margin-bottom: 30px;
+}
+
+.volume-slider {
+	width: 80%;
+	float: right;
+}
