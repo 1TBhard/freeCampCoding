@@ -1,0 +1,141 @@
+$machineWidth: 300px;
+$machineHeight: 500px;
+$displayFontSize: 40px;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+#App {
+	position: absolute;
+	padding: 0 20px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: $machineWidth;
+	height: $machineHeight;
+	border-radius: 5px;
+	background-color: #292929;
+}
+
+button {
+	background-color: #5c5c5c;
+	color: white;
+	font-size: 25px;
+	font-weight: 500;
+	border: none;
+}
+
+button:hover {
+	cursor: pointer;
+	filter: brightness(85%);
+	box-shadow: inset 1px 1px #fff, inset -1px -1px #fff;
+}
+
+button:active {
+	color: gold;
+}
+
+#clear {
+	grid-area: clear;
+	background-color: #9e4841;
+}
+#divide {
+	grid-area: divide;
+	background-color: #417a9e;
+}
+#multiply {
+	grid-area: multiply;
+	background-color: #417a9e;
+}
+#seven {
+	grid-area: seven;
+}
+#eight {
+	grid-area: eight;
+}
+#nine {
+	grid-area: nine;
+}
+#subtract {
+	grid-area: subtract;
+	background-color: #417a9e;
+}
+#four {
+	grid-area: four;
+}
+#five {
+	grid-area: five;
+}
+#six {
+	grid-area: six;
+}
+#add {
+	grid-area: add;
+	background-color: #417a9e;
+}
+#one {
+	grid-area: one;
+}
+#two {
+	grid-area: two;
+}
+#three {
+	grid-area: three;
+}
+#equals {
+	grid-area: equals;
+	background-color: #419e66;
+}
+#zero {
+	grid-area: zero;
+}
+#decimal {
+	grid-area: decimal;
+	background-color: #417a9e;
+}
+
+.buttons {
+	display: grid;
+	grid-gap: 2px;
+	grid-template-areas:
+		"clear clear divide multiply"
+		"seven eight nine subtract"
+		"four five six add"
+		"one two three equals"
+		"zero zero decimal equals";
+	height: $machineHeight * 0.6;
+}
+
+#all-display {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: $machineHeight * 0.2;
+	margin: $machineHeight * 0.05 0;
+	padding: $machineHeight * 0.02 0;
+	background-color: #094d23;
+
+	#display,
+	.formulaScreen {
+		padding: 0 15px;
+		text-align: right;
+	}
+
+	#display {
+		font-size: $displayFontSize;
+		color: white;
+	}
+
+	.formulaScreen {
+		font-size: $displayFontSize * 0.7;
+		color: Yellow;
+	}
+}

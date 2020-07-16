@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#App {
+  position: absolute;
+  padding: 0 20px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 300px;
+  height: 500px;
+  border-radius: 5px;
+  background-color: #292929;
+}
+
+button {
+  background-color: #5c5c5c;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
+  -webkit-box-shadow: inset 1px 1px #fff, inset -1px -1px #fff;
+          box-shadow: inset 1px 1px #fff, inset -1px -1px #fff;
+}
+
+button:active {
+  color: gold;
+}
+
+#clear {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: clear;
+  background-color: #9e4841;
+}
+
+#divide {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: divide;
+  background-color: #417a9e;
+}
+
+#multiply {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: multiply;
+  background-color: #417a9e;
+}
+
+#seven {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+#eight {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: eight;
+}
+
+#nine {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+#subtract {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: subtract;
+  background-color: #417a9e;
+}
+
+#four {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+#five {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+#six {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+#add {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: add;
+  background-color: #417a9e;
+}
+
+#one {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+#two {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+#three {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+#equals {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: equals;
+  background-color: #419e66;
+}
+
+#zero {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: zero;
+}
+
+#decimal {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: decimal;
+  background-color: #417a9e;
+}
+
+.buttons {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2px;
+      grid-template-areas: "clear clear divide multiply" "seven eight nine subtract" "four five six add" "one two three equals" "zero zero decimal equals";
+  height: 300px;
+}
+
+#all-display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+  margin: 25px 0;
+  padding: 10px 0;
+  background-color: #094d23;
+}
+
+#all-display #display,
+#all-display .formulaScreen {
+  padding: 0 15px;
+  text-align: right;
+}
+
+#all-display #display {
+  font-size: 40px;
+  color: white;
+}
+
+#all-display .formulaScreen {
+  font-size: 28px;
+  color: Yellow;
+}
